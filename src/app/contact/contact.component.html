@@ -1,0 +1,57 @@
+<div>
+  <h3 class="mt-5"><span>G</span>et in Touch</h3>
+</div>
+<p>Kimi.fotovat@gmail.com</p>
+<div>
+  <h3 class="my-5"><span>C</span>ontact Form</h3>
+</div>
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+  <div class="row">
+    <div class="col-md-6 pb-2">
+      <input
+        type="text"
+        class="form-control goldborder"
+        id="validationDefault01"
+        name="fullName"
+        placeholder="Full Name"
+        formControlName="fullName"
+        [ngClass]="{'error-input': !contactForm.get('fullName').valid && submitted}"
+      />
+      <small *ngIf="!contactForm.get('fullName').valid && submitted" class="form-text error-message">Please fill out this field correctly</small>
+    </div>
+    <div class="col-md-6">
+      <input
+        type="text"
+        class="form-control goldborder"
+        id="validationDefaultUsername"
+        name="_replyto"
+        placeholder="Email Address"
+        aria-describedby="inputGroupPrepend2"
+        formControlName="email"
+        [ngClass]="{'error-input': !contactForm.get('email').valid && submitted}"
+      />
+      <small *ngIf="!contactForm.get('email').valid && submitted" class="form-text error-message">Please fill out this field correctly</small>
+    </div>
+    <div class="col-md-12 my-4">
+      <div class="form-floating">
+        <textarea
+          class="form-control goldborder"
+          placeholder="Your Message"
+          id="floatingTextarea2"
+          style="height: 100px"
+          name="msg_text"
+          formControlName="msg_text"
+          [ngClass]="{'error-input': !contactForm.get('msg_text').valid && submitted}"
+        ></textarea>
+        <small *ngIf="!contactForm.get('msg_text').valid && submitted" class="form-text error-message">Please fill out this field correctly</small>
+      </div>
+    </div>
+    <div div class="col-md-12 pb-5">
+      <button type="submit" class="btn">{{ (isSending)? 'Please wait...' : 'Send Message' }}</button>
+      <p class="mt-2">
+        <span class="my-5" *ngIf="sentStatus && !isSending">Message sent successfully</span>
+        <span class="error-message" *ngIf="!sentStatus && submitted && !isSending">Sending failed. Please try again later</span>
+      </p>
+    </div>
+  </div>
+</form>

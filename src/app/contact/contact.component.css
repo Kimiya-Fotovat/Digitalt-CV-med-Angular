@@ -1,0 +1,21 @@
+button[type="submit"][disabled]{
+    cursor: no-drop;
+}
+
+small.error-message {
+    display: none;
+}
+
+input.ng-invalid + small,
+textarea.ng-invalid + small{
+    display: block;
+    color: rgb(224,150,150);
+}
+
+.error-input {
+    border:2px solid rgb(224,150,150);
+}
+
+span.error-message{
+    color: rgb(224,150,150);
+}

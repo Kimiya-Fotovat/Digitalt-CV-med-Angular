@@ -1,0 +1,6 @@
+<div class="menu">
+    <a *ngFor="let _item of menuItems" [routerLink]="[_item.path]">
+        <i [class]="_item.icon"></i>
+        {{ _item.title }}
+    </a>
+</div>

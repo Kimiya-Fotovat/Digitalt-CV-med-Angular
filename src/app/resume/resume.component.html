@@ -1,0 +1,38 @@
+<div>
+  <h3 class="my-3"><span>R</span>esume</h3>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="d-flex WORK-EXPERIENCE">
+        <i class="fas fa-briefcase"></i>
+        <h5 class="mt-1">WORK EXPERIENCE</h5>
+      </div>
+      <div class="lh-sm" *ngFor="let _exp of experiencesList">
+        <p [class]="_exp.yearContainer">{{ _exp.yearStart }}-{{ _exp.yearEnd }}</p>
+        <h6 class="title">{{ _exp.title }}</h6>
+        <p class="place">{{ _exp.place }}</p>
+        <p class="task">
+          {{ _exp.task }}
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="vl"></div>
+    </div>
+
+    <div class="col-md-5">
+      <div class="d-flex WORK-EXPERIENCE">
+        <i class="fas fa-university"></i>
+        <h5 class="mt-1">EDUCATION</h5>
+      </div>
+      <div class="lh-sm" *ngFor="let _edu of educationsList">
+        <p [class]="_edu.yearContainer">{{ _edu.yearStart }}-{{ _edu.yearEnd }}</p>
+        <h6 class="title">{{ _edu.title }}</h6>
+        <p class="place">{{ _edu.place }}</p>
+        <p class="task">
+          {{ _edu.task }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

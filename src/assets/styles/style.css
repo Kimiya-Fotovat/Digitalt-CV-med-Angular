@@ -1,0 +1,252 @@
+
+body{
+    background-color: rgb(40,40,40);
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+        color: rgb(50, 50, 50);
+    }
+    a {
+        color: rgb(181, 156, 98);
+        font-size: small;
+        text-decoration: none;
+        transition: .5s;
+    }
+    p {
+        color: rgb(100, 100, 100);
+    }
+    p,h1,h2,h3,h4,h5{
+        font-family: 'Poppins', sans-serif;
+    }
+    h3 {
+        font-weight: bolder;
+    }
+    span {
+        color: rgb(181, 156, 98);
+    }
+    
+    /* left-colm*/
+    .left-colm{
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: -10px -10px 5px 5px rgb(89, 78, 54);
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+    .left-colm img {
+        border-radius: 10px;
+    }
+    .Fun-Facts i{
+        font-size: xx-large;
+        padding-bottom: 1rem;
+        color: rgb(181, 156, 98);
+    }
+    .Fun-Facts p{
+        margin-bottom: 3rem;
+    }
+    
+    .cv-btn {
+        color: #404040;
+    }
+    
+    .cv-btn:hover {
+        color: rgb(181, 156, 98);
+    }
+    
+    /* right-colm*/
+    .right-colm{
+        background-color: rgb(255, 255, 255);
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    @media screen and (max-width: 992px){
+        .right-colm{
+            border-radius: 10px;
+            }
+        }
+    
+    
+    /*My Services*/
+    .frontend i{
+        font-size: medium;
+        color: rgb(181, 156, 98);
+    }
+    .frontend p{
+        line-height: 5px;
+    }
+    .shape1 i{
+        font-size: 2.2rem;
+        margin-right: 0.5rem;
+    }
+    .shape2 i{
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    .shape3 i{
+        font-size: 2rem;
+        margin-right: 0.5rem;
+        
+    }
+    /*Resume*/
+    .WORK-EXPERIENCE i{
+        font-size: 1.7rem;
+        margin-right: 0.5rem;
+        color: rgb(181, 156, 98);
+    }
+    
+    .years{
+        color: rgb(204, 204, 204);
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .title{
+    margin-bottom: 0;
+    color: rgb(50, 50, 50);
+    }
+    .place{
+        font-size: 0.8rem;
+        color: rgb(153, 153, 153);
+        margin-bottom: 0;
+    }
+    
+    .task{
+        color: rgb(100, 100, 100);
+        margin-top: 0.3rem;
+    }
+    .active{
+        color: rgb(181, 156, 98);
+        border: 1px solid rgb(181, 156, 98);
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .vl {
+        border-left: 3px solid rgb(181, 156, 98);
+        height: 500px;
+        margin: 0 auto;
+        width: 1px;
+      }
+    
+    
+    @media screen and (max-width: 768px) {
+        .vl {
+            border-left: 0;
+            border-bottom: 3px solid rgb(181, 156, 98);
+            height: 1px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    
+    /* Contact*/
+    .goldborder{
+        border: 2px solid rgb(181, 156, 98);
+    }
+    
+    .goldborder:focus {
+        box-shadow: 2px 2px 5px rgb(181, 156, 98);
+        border: 2px solid rgb(181, 156, 98);
+    }
+    
+    .btn{
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: rgb(181, 156, 98);
+        border-radius: 5px;
+        border: 2px solid rgb(181, 156, 98);
+    }
+    :hover.btn{
+        background-color: rgb(181, 156, 98);
+        color: rgb(50, 50, 50);
+        font-weight: 500;
+        
+    }
+    
+    a {
+        text-decoration: none !important;
+    }
+    
+    
+      /* menu */
+      .menu{
+        background-color: transparent;
+        /*border: 2px solid rgb(181, 156, 98);*/
+    
+    }
+    
+      .menu a {
+        display: block;
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+        border-bottom: 1px solid rgb(181, 156, 98);
+        text-decoration: none ;
+        color: rgb(181, 156, 98);
+    }
+    
+    .menu a:hover{
+        text-shadow: 2px 2px 5px rgb(181, 156, 98);
+    }
+    
+    .menu a:last-child {
+        border-bottom: 0;
+    }
+    
+      .menu a i {
+            display: block;
+      }
+      .menu i{
+            font-size: 1.5rem;
+            color: rgb(181, 156, 98);
+      }
+    
+      .menu {
+          margin: 0;
+          margin-top: 50px;
+          border-radius: 5px;
+      }
+      .menu a{
+          text-decoration: none;
+      }
+       
+    
+      @media screen and (max-width: 992px) {
+        .menu {
+            border: none;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .menu a {
+        
+            padding: 20px 15px 20px 15px;
+            border-bottom: 0;
+            /*border-right: 1px solid rgb(181, 156, 98);*/
+        }
+        
+    
+        .menu a:last-child {
+            border-right: 0;
+        }
+      }
+    
+    /* az on*/
+      .background {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+    
+    
+    
